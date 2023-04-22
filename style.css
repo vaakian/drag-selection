@@ -1,0 +1,46 @@
+#app {
+  text-align: center;
+  margin-top: 60px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+
+#root {
+  --size: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 20px;
+  border: 1px dashed darkturquoise;
+  padding: 20px;
+  min-height: 500px;
+  position: relative;
+  background-color: #f8faf5;
+  margin: auto 50px;
+  border-radius: 8px;
+}
+.file {
+  width: var(--size);
+  height: var(--size);
+  line-height: var(--size);
+  background-color: wheat;
+  border-radius: 10px;
+  border: 1px solid gold;
+}
+/* .file:hover {
+  background-color: lightblue;
+  outline: 2px dashed lightblue;
+} */
+.selected {
+  background-color: lightblue;
+  outline: 2px dashed lightblue;
+}
+#select {
+  top: -10px;
+  border: 1px solid rgb(114, 159, 175);
+  position: absolute;
+  background-color: lightblue;
+  opacity: 0.3;
+}
